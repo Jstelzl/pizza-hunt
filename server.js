@@ -11,8 +11,8 @@ app.use(express.static('public'));
 app.use(require('./routes'));
 
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://127.0.0.1:27017/pizza-hunt', {
-    userNameUrlParser: true,
-    userUnifiedTopology: true
+    // userNameUrlParser: true,
+    // userUnifiedTopology: true
 });
 
 // Use this to log mongo queries being executed!
